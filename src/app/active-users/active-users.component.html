@@ -1,0 +1,7 @@
+<h1>To Do list</h1>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let thing of things; let i = index">
+    {{ thing }} |
+    <a href="#" (click)="setToDoList(i)">Add to List</a>
+  </li>
+</ul>

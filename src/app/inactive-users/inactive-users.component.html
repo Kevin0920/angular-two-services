@@ -1,0 +1,7 @@
+<h1>Display List</h1>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let list of lists; let i = index">
+    {{ list }} |
+    <a href="#" (click)="setBackToList(i)">Send to Do list</a>
+  </li>
+</ul>
